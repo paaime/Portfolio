@@ -1,0 +1,58 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  h3 {
+    text-align: center;
+    span {
+      color: white;
+      margin-right: 5px;
+      font-size: 25px;
+      font-family: var(--secondary-font);
+      &:nth-of-type(2) {
+        width: 10px;
+        height: 10px;
+        background-color: grey;
+      }
+    }
+    color: var(--lightest-slate);
+    font-size: 30px;
+  }
+  p {
+    font-size: 16px;
+    text-align: center;
+    margin: 50px 0;
+    span {
+      color: white;
+    }
+  }
+  button {
+    border: 2px solid var(--green);
+    background: none;
+    border-radius: 5px;
+    color: var(--green);
+    height: 60px;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 600;
+    width: 200px;
+    &:hover {
+      background: var(--green);
+      a {
+        color: black;
+      }
+    }
+    a {
+      color: var(--green);
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .contact {
+    height: auto;
+  }
+}

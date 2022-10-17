@@ -1,0 +1,32 @@
+.github {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3 {
+    text-align: center;
+    span {
+      color: white;
+      margin-right: 5px;
+      font-size: 25px;
+      font-family: var(--secondary-font);
+      &:nth-of-type(2) {
+        width: 10px;
+        height: 10px;
+        background-color: grey;
+      }
+    }
+    color: var(--lightest-slate);
+    font-size: 30px;
+  }
+  .subtitle {
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--green);
+  }
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+  }
+}

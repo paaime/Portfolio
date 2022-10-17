@@ -1,0 +1,116 @@
+.projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3 {
+    span {
+      color: white;
+      margin-right: 5px;
+      font-size: 25px;
+      font-family: var(--secondary-font);
+      &:nth-of-type(2) {
+        width: 10px;
+        height: 10px;
+        background-color: grey;
+      }
+    }
+    color: var(--lightest-slate);
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .project {
+    display: flex;
+    margin-bottom: 50px;
+    .thumbnail {
+      width: 50%;
+      img {
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+        filter: grayscale(100%) contrast(1) brightness(90%);
+        transition: all 0.5s;
+        &:hover {
+          filter: none;
+        }
+      }
+    }
+    .info {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .featured {
+        color: var(--green);
+        font-size: 14px;
+      }
+      p:nth-of-type(2) {
+        font-family: var(--primary-font);
+      }
+      h4 {
+        font-family: var(--primary-font);
+        font-size: 25px;
+        margin: 10px 0;
+        color: var(--lightest-slate);
+      }
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        color: var(--green);
+      }
+      a {
+        width: 20px;
+        color: none;
+      }
+      svg {
+        color: #8892af;
+      }
+    }
+  }
+
+  .luffyswap {
+    .info {
+      text-align: right;
+      align-items: flex-end;
+      ul {
+        li {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  .avaxslime {
+    display: flex;
+    .thumbnail {
+      order: 2;
+    }
+    .info {
+      align-items: flex-start;
+      ul {
+        padding-inline-start: 0;
+        li {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .projects {
+    height: auto;
+    .project {
+      flex-direction: column;
+      .thumbnail {
+        width: auto;
+        order: 0;
+        margin-bottom: 10px;
+      }
+      .info {
+        width: auto;
+      }
+    }
+  }
+}
