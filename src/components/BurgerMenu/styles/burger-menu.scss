@@ -3,7 +3,7 @@
   height: 100vh;
   top: 0;
   right: 0px;
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -14,11 +14,11 @@
   animation: moveToLeft 0.4s ease-in-out;
 
   @keyframes moveToLeft {
-      0% {
-          transform: translateX(300px);
-      }
-      100% {
-        transform: translateX(0px);
+    0% {
+      transform: translateX(300px);
+    }
+    100% {
+      transform: translateX(0px);
     }
   }
   nav {
@@ -35,17 +35,27 @@
     &:hover {
       color: white;
     }
+    a {
+      text-decoration: none;
+      color: #b3bfde;
+    }
   }
-  button {
+  .cv {
     background: none;
     border: 1px solid white;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     margin: 15px 0;
     height: 40px;
     font-family: var(--secondary-font);
     font-weight: 600;
     width: 90px;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
     &:hover {
       background-color: white;
       color: black;

@@ -12,7 +12,9 @@ export default function Hero() {
         J'étudie à <span>l'école 42</span> de Lyon et passe mon temps à
         apprendre les <span>nouveautés du milieu du Dev web.</span>
       </p>
-      <button className="cv-button">Voir mon CV</button>
+      <a href="/cv.pdf" target="_blank" className="cv-button">
+        Voir mon CV
+      </a>
     </div>
   );
 }

@@ -16,6 +16,16 @@ header {
     display: flex;
     align-items: center;
   }
+  button {
+    a {
+      color: white;
+    }
+    &:hover {
+      a {
+        color: black;
+      }
+    }
+  }
   a {
     color: #b3bfde;
     text-decoration: none;
@@ -35,8 +45,11 @@ header {
       color: white;
     }
   }
-  button {
+  .cv {
     background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid white;
     border-radius: 5px;
     color: white;
@@ -44,6 +57,11 @@ header {
     font-family: var(--secondary-font);
     font-weight: 600;
     width: 90px;
+    transition: all 0.3s;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
   }
   .menu-logo {
     display: none;

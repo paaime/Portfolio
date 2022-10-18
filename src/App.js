@@ -9,12 +9,20 @@ import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
 import Footer from "./components/Footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import disableScroll from "disable-scroll";
 
 AOS.init();
 
 function App() {
   const [burgerMenu, setBurgerMenu] = useState(false);
+  // useEffect(() => {
+  //   if (burgerMenu) {
+  //     disableScroll.on();
+  //   } else {
+  //     disableScroll.off();
+  //   }
+  // }, [burgerMenu]);
   return (
     <div className="app">
       <Header burgerMenu={{ burgerMenu, setBurgerMenu }} />

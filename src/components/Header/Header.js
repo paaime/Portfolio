@@ -17,15 +17,23 @@ export default function Header(props) {
           </a>
         </nav>
         <nav>
-          <a href="#projects"><span>02.</span>Projets</a>
+          <a href="#projects">
+            <span>02.</span>Projets
+          </a>
         </nav>
         <nav>
-          <a href="#github"><span>03.</span>Github</a>
+          <a href="#github">
+            <span>03.</span>Github
+          </a>
         </nav>
         <nav>
-          <a href="#contact"><span>04.</span>Contact</a>
+          <a href="#contact">
+            <span>04.</span>Contact
+          </a>
         </nav>
-        <button>CV</button>
+        <a className="cv" href="/cv.pdf" target="_blank">
+          CV
+        </a>
       </div>
       <img
         className="menu-logo"
