@@ -7,8 +7,8 @@ export const cardData = [
   },
   {
     repoName: "Portfolio",
-    description: "Mon portfolio disponible sur https://paularthuraime.com",
+    description: "Mon portfolio disponible sur https://paularthur-aime.fr",
     techno: ["React.js", "API", "SCSS"],
-    link: "https://github.com/paaime/dailyflow",
+    link: "https://github.com/paaime/Portfolio",
   },
 ];
