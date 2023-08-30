@@ -16,10 +16,7 @@ export default function Avaxslime(props) {
           <li>Ether.js</li>
           <li>Web3</li>
         </ul>
-        <a
-          href="https://luffy-swap-pm1duq6o5-luffyswapprod.vercel.app/"
-          target="_blank"
-        >
+        <a href="https://avaxslime.com/" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"

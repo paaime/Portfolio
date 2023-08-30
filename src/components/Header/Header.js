@@ -32,7 +32,7 @@ export default function Header(props) {
           </a>
         </nav>
         <a className="cv" href="/cv.pdf" target="_blank">
-          CV
+          Contact
         </a>
       </div>
       <img

@@ -1,7 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Figtree";
+  font-family: 'Figtree';
+  background-color: #0a1a2f;
+  // cursor: none;
+}
+
+a,
+button {
+  cursor: none;
 }
 
 html {
@@ -20,11 +27,11 @@ h4 {
 p {
   color: #8892af;
   font-weight: 200;
-  font-family: "Space Mono";
+  font-family: 'Space Mono';
 }
 
 button {
-  cursor: pointer;
+  // cursor: pointer;
   &:hover {
     transition: all 0.5s;
     background-color: white;
@@ -42,7 +49,6 @@ button {
 }
 
 .app-wrapper {
-  display: flex;
   .list {
     display: flex;
     flex-direction: column;
@@ -55,6 +61,17 @@ button {
       border-radius: 2px;
       height: 100px;
       background-color: var(--light-slate);
+    }
+    .malt-icon {
+      path {
+        transition: all 0.3s;
+      }
+      &:hover {
+        path {
+          transition: all 0.3s;
+          fill: white;
+        }
+      }
     }
     svg {
       width: 25px;
@@ -71,6 +88,11 @@ button {
     p {
       writing-mode: vertical-lr;
       margin-bottom: 30px;
+    }
+    .malt-icon {
+      path {
+        fill: #8892af;
+      }
     }
   }
   .left {
@@ -106,10 +128,49 @@ button {
   }
 }
 
+@media (max-width: 800px) {
+  .app-wrapper {
+    margin: 0 20px;
+  }
+}
+
 :root {
   --light-slate: #a8b2d1;
   --lightest-slate: #ccd6f6;
   --green: #64ffda;
-  --primary-font: "Figtree";
-  --secondary-font: "Space Mono";
+  --primary-font: 'Figtree';
+  --secondary-font: 'Space Mono';
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.cursor-dot {
+  $size: 8px;
+  width: $size;
+  height: $size;
+  background-color: #ccd6f6;
+}
+
+.cursor-dot-outline {
+  $size: 40px;
+  width: $size;
+  height: $size;
+  background-color: rgba(#ccd6f6, 0.5);
+}
+
+.malt-icon {
+  rect {
+    fill: none;
+  }
 }

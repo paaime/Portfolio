@@ -11,7 +11,7 @@ export default function Projects() {
       className="projects"
     >
       <h3>
-        <span>02.</span>Quelque projets
+        <span>02.</span>Quelques projets
       </h3>
       <Luffyswap />
       <Avaxslime />
