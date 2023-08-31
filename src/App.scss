@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Figtree';
-  background-color: #0a1a2f;
-  // cursor: none;
+  // background-color: #0a1a2f;
+  cursor: none;
 }
 
 a,
@@ -43,12 +43,32 @@ button {
   background-color: #0a1a2f;
 }
 
+#tsparticles {
+  canvas {
+    z-index: 1 !important;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .content-wrapper {
   max-width: 800px;
   margin: 0 auto;
 }
 
 .app-wrapper {
+  position: relative;
+  z-index: 10;
   .list {
     display: flex;
     flex-direction: column;
@@ -59,8 +79,39 @@ button {
     .line {
       width: 1px;
       border-radius: 2px;
-      height: 100px;
+      height: 150px;
       background-color: var(--light-slate);
+      // background-color: black;
+      overflow: hidden;
+      // &::after {
+      //   content: '';
+      //   display: block;
+      //   position: absolute;
+      //   height: 100px;
+      //   width: 1px;
+      //   margin-left: 12px;
+      //   // top: -50%;
+      //   left: 0;
+      //   background: linear-gradient(
+      //     to bottom,
+      //     rgba(255, 255, 255, 0) 0%,
+      //     #ffffff 75%,
+      //     #ffffff 100%
+      //   );
+      //   animation: drop 7s 0s infinite;
+      //   animation-fill-mode: forwards;
+      //   animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+      // }
+      @keyframes drop {
+        0% {
+          // top: -50%;
+          bottom: 0%;
+        }
+        100% {
+          // top: 110%;
+          bottom: -100%;
+        }
+      }
     }
     .malt-icon {
       path {

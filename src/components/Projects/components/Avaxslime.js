@@ -1,9 +1,9 @@
+import ParallaxCard from './ParallaxCard';
+
 export default function Avaxslime(props) {
   return (
     <div className="project avaxslime">
-      <div className="thumbnail">
-        <img src="/img/avaxslime.png" />
-      </div>
+      <ParallaxCard />
       <div className="info">
         <p className="featured">Projet personnel</p>
         <h4>AvaxSlime</h4>
@@ -24,8 +24,8 @@ export default function Avaxslime(props) {
             fill="none"
             stroke="currentColor"
             stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             class="feather feather-external-link"
           >
             <title>External Link</title>

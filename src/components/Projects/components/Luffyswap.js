@@ -1,15 +1,15 @@
+import ParallaxCard from './ParallaxCard';
+
 export default function Luffyswap(props) {
   return (
     <div className="project luffyswap">
-      <div className="thumbnail">
-        <img src="/img/luffyswap.png" />
-      </div>
+      <ParallaxCard />
       <div className="info">
         <p className="featured">Projet personnel</p>
         <h4>Luffy Swap</h4>
         <p>
-          Une application Web3 permettant de stacker des cryptomonnaies
-          pour obtenir un rendement.
+          Une application Web3 permettant de stacker des cryptomonnaies pour
+          obtenir un rendement.
         </p>
         <ul className="language">
           <li>React.js</li>
@@ -28,8 +28,8 @@ export default function Luffyswap(props) {
             fill="none"
             stroke="currentColor"
             stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             class="feather feather-external-link"
           >
             <title>External Link</title>

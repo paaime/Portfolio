@@ -1,10 +1,10 @@
-import "./styles/header.scss";
+import './styles/header.scss';
 
 export default function Header(props) {
   const { burgerMenu, setBurgerMenu } = props.burgerMenu;
 
   const handleBurgerMenu = () => {
-    console.log("test");
+    console.log('test');
     burgerMenu ? setBurgerMenu(false) : setBurgerMenu(true);
   };
   return (
@@ -31,7 +31,7 @@ export default function Header(props) {
             <span>04.</span>Contact
           </a>
         </nav>
-        <a className="cv" href="/cv.pdf" target="_blank">
+        <a className="cv" href="#contact">
           Contact
         </a>
       </div>

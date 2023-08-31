@@ -1,17 +1,17 @@
-import "../styles/card.scss";
+import '../styles/card.scss';
 
-export default function Card(props) {
-  const { data } = props;
-  console.log(data);
+export default function Card({ data }) {
   return (
-    <a href={data.link} target="_blank" className="card">
-      <p className="title">{data.repoName}</p>
-      <p className="info">{data.description}</p>
-      <ul>
-        {data.techno.map((item) => (
-          <li>{item}</li>
-        ))}
-      </ul>
+    <a rel="noreferrer" href={data.link} target="_blank" className="card">
+      <div className="card-content">
+        <p className="title">{data.repoName}</p>
+        <p className="info">{data.description}</p>
+        <ul>
+          {data.techno.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
     </a>
   );
 }
