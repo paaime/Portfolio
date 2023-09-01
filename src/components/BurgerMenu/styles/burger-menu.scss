@@ -8,10 +8,12 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 300px;
+  // width: 300px;
   z-index: 20;
-  transition: all 0.5;
-  animation: moveToLeft 0.4s ease-in-out;
+  width: 0px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  // animation: moveToLeft 0.4s ease-in-out;
 
   @keyframes moveToLeft {
     0% {
@@ -67,5 +69,37 @@
     right: 30px;
     top: 20px;
     filter: invert(1);
+    display: none;
+  }
+}
+
+.burger-menu-expand {
+  opacity: 1;
+  animation: open-burger-menu 0.4s ease-in-out;
+  width: 300px;
+  img {
+    display: block;
+  }
+}
+
+@keyframes open-burger-menu {
+  0% {
+    opacity: 1;
+    width: 300px;
+  }
+  100% {
+    opacity: 0;
+    width: 0px;
+  }
+}
+
+@keyframes open-burger-menu {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 300px;
   }
 }

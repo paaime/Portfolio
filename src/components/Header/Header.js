@@ -1,15 +1,27 @@
 import './styles/header.scss';
+import { useEffect } from 'react';
 
-export default function Header(props) {
-  const { burgerMenu, setBurgerMenu } = props.burgerMenu;
-
+export default function Header() {
+  useEffect(() => {
+    var prevScrollpos = window.scrollY;
+    window.onscroll = function () {
+      var currentScrollPos = window.scrollY;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById('header').style.top = '0';
+      } else {
+        document.getElementById('header').style.top = '-100px';
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  }, []);
   const handleBurgerMenu = () => {
-    console.log('test');
-    burgerMenu ? setBurgerMenu(false) : setBurgerMenu(true);
+    document
+      .getElementById('burger-menu')
+      .classList.toggle('burger-menu-expand');
   };
   return (
-    <header>
-      <img src="/img/profile.png" />
+    <header id="header">
+      <img src="/img/profile.png" alt="Paul-Arthur" />
       <div className="navbar">
         <nav>
           <a href="#about">
@@ -38,6 +50,7 @@ export default function Header(props) {
       <img
         className="menu-logo"
         onClick={handleBurgerMenu}
+        alt="menu"
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png"
       />
     </header>

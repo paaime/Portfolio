@@ -7,8 +7,8 @@ export default function Card({ data }) {
         <p className="title">{data.repoName}</p>
         <p className="info">{data.description}</p>
         <ul>
-          {data.techno.map((item) => (
-            <li>{item}</li>
+          {data.techno.map((item, index) => (
+            <li key={index}>{item}</li>
           ))}
         </ul>
       </div>

@@ -33,7 +33,6 @@ export default function ParallaxCard() {
   function cardBgTransform() {
     const tX = mousePX * -40;
     const tY = mousePY * -40;
-    console.log(tX, tY);
     return {
       transform: `translateX(${tX}px) translateY(${tY}px)`,
     };

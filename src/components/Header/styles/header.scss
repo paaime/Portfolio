@@ -9,6 +9,7 @@ header {
   background-color: rgb(10 26 47 / 50%);
   backdrop-filter: blur(10px);
   z-index: 11;
+  transition: all 0.3s ease-in-out;
   img {
     width: 50px;
   }

@@ -1,43 +1,53 @@
 import './styles/burger-menu.scss';
+import { useEffect, useRef } from 'react';
 
-export default function BurgerMenu(props) {
-  const { burgerMenu, setBurgerMenu } = props.burgerMenu;
-
-  const handleBurgerMenu = () => {
-    burgerMenu ? setBurgerMenu(false) : setBurgerMenu(true);
+export default function BurgerMenu() {
+  const burgerRef = useRef(null);
+  const handleClose = () => {
+    document
+      .getElementById('burger-menu')
+      .classList.remove('burger-menu-expand');
   };
-  const handleNav = () => {};
 
+  const handleOutsideClick = (e) => {
+    if (burgerRef.current && !burgerRef.current.contains(e.target)) {
+      handleClose();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleOutsideClick);
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, []);
   return (
-    <div className="burger-menu">
+    <div id="burger-menu" className="burger-menu" ref={burgerRef}>
       <img
-        onClick={handleBurgerMenu}
+        onClick={handleClose}
         src="https://cdn.icon-icons.com/icons2/1674/PNG/512/close_111152.png"
         alt="close"
       />
       <nav>
-        <a href="#about">
+        <a href="#about" onClick={handleClose}>
           <span>01.</span>À propos
         </a>
       </nav>
       <nav>
-        <a href="#projects">
+        <a href="#projects" onClick={handleClose}>
           <span>02.</span>Projets
         </a>
       </nav>
       <nav>
-        <a href="#github">
+        <a href="#github" onClick={handleClose}>
           <span>03.</span>Github
         </a>
       </nav>
       <nav>
-        <a href="#contact">
+        <a href="#contact" onClick={handleClose}>
           <span>04.</span>Contact
         </a>
       </nav>
-      <a className="cv" href="/cv.pdf" target="_blank">
-        CV
-      </a>
     </div>
   );
 }

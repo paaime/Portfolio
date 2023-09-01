@@ -16,17 +16,17 @@ export default function Avaxslime(props) {
           <li>Ether.js</li>
           <li>Web3</li>
         </ul>
-        <a href="https://avaxslime.com/" target="_blank">
+        <a href="https://avaxslime.com/" rel="noreferrer" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
+            strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            class="feather feather-external-link"
+            className="feather feather-external-link"
           >
             <title>External Link</title>
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
