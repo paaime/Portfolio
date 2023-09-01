@@ -4,7 +4,6 @@ export default function Contact() {
   return (
     <div
       data-aos="fade-in"
-      data-aos-delay="500"
       id="contact"
       className="contact"
     >

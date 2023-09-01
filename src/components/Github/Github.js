@@ -20,7 +20,7 @@ export default function Github() {
     });
   }, []);
   return (
-    <div data-aos="fade-in" data-aos-delay="500" id="github" className="github">
+    <div data-aos="fade-in" id="github" className="github">
       <h3>
         <span>03.</span>Github
       </h3>

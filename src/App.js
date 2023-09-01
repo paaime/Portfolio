@@ -9,155 +9,30 @@ import BurgerMenu from './components/BurgerMenu/BurgerMenu';
 import Footer from './components/Footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useState, useEffect } from 'react';
-import disableScroll from 'disable-scroll';
+import { useEffect, useState } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 
-AOS.init();
-
+console.log(window.innerWidth);
+AOS.init({
+  offset: window.innerWidth > 1800 ? -100 : 0,
+  // delay: 500,
+  // offset: -200,
+  once: true,
+  duration: 1000,
+});
 function App() {
   const [burgerMenu, setBurgerMenu] = useState(false);
-
-  useEffect(() => {
-    var cursor = {
-      delay: 8,
-      _x: 0,
-      _y: 0,
-      endX: window.innerWidth / 2,
-      endY: window.innerHeight / 2,
-      cursorVisible: true,
-      cursorEnlarged: false,
-      $dot: document.querySelector('.cursor-dot'),
-      $outline: document.querySelector('.cursor-dot-outline'),
-
-      init: function () {
-        // Set up element sizes
-        this.dotSize = this.$dot?.offsetWidth;
-        this.outlineSize = this.$outline?.offsetWidth;
-
-        this.setupEventListeners();
-        this.animateDotOutline();
-      },
-
-      //     updateCursor: function(e) {
-      //         var self = this;
-
-      //         console.log(e)
-
-      //         // Show the cursor
-      //         self.cursorVisible = true;
-      //         self.toggleCursorVisibility();
-
-      //         // Position the dot
-      //         self.endX = e.pageX;
-      //         self.endY = e.pageY;
-      //         self.$dot.style.top = self.endY + 'px';
-      //         self.$dot.style.left = self.endX + 'px';
-      //     },
-
-      setupEventListeners: function () {
-        var self = this;
-
-        // Anchor hovering
-        document.querySelectorAll('a').forEach(function (el) {
-          el.addEventListener('mouseover', function () {
-            self.cursorEnlarged = true;
-            self.toggleCursorSize();
-          });
-          el.addEventListener('mouseout', function () {
-            self.cursorEnlarged = false;
-            self.toggleCursorSize();
-          });
-        });
-
-        // Click events
-        document.addEventListener('mousedown', function () {
-          self.cursorEnlarged = true;
-          self.toggleCursorSize();
-        });
-        document.addEventListener('mouseup', function () {
-          self.cursorEnlarged = false;
-          self.toggleCursorSize();
-        });
-
-        document.addEventListener('mousemove', function (e) {
-          // Show the cursor
-          self.cursorVisible = true;
-          self.toggleCursorVisibility();
-
-          // Position the dot
-          self.endX = e.pageX;
-          self.endY = e.pageY;
-          self.$dot.style.top = self.endY + 'px';
-          self.$dot.style.left = self.endX + 'px';
-        });
-
-        // Hide/show cursor
-        document.addEventListener('mouseenter', function (e) {
-          self.cursorVisible = true;
-          self.toggleCursorVisibility();
-          self.$dot.style.opacity = 1;
-          self.$outline.style.opacity = 1;
-        });
-
-        document.addEventListener('mouseleave', function (e) {
-          self.cursorVisible = true;
-          self.toggleCursorVisibility();
-          self.$dot.style.opacity = 0;
-          self.$outline.style.opacity = 0;
-        });
-      },
-
-      animateDotOutline: function () {
-        var self = this;
-
-        self._x += (self.endX - self._x) / self.delay;
-        self._y += (self.endY - self._y) / self.delay;
-        self.$outline.style.top = self._y + 'px';
-        self.$outline.style.left = self._x + 'px';
-
-        requestAnimationFrame(this.animateDotOutline.bind(self));
-      },
-
-      toggleCursorSize: function () {
-        var self = this;
-
-        if (self.cursorEnlarged) {
-          self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
-          self.$outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-        } else {
-          self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
-          self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
-        }
-      },
-
-      toggleCursorVisibility: function () {
-        var self = this;
-
-        if (self.cursorVisible) {
-          self.$dot.style.opacity = 1;
-          self.$outline.style.opacity = 1;
-        } else {
-          self.$dot.style.opacity = 0;
-          self.$outline.style.opacity = 0;
-        }
-      },
-    };
-    cursor.init();
-  }, []);
 
   const particlesInit = async (main) => {
     await loadFull(main);
   };
-  const particlesLoaded = (container) => {};
 
   return (
     <div className="app">
       <Particles
         id="tsparticles"
         init={particlesInit}
-        loaded={particlesLoaded}
         options={{
           particles: {
             number: {

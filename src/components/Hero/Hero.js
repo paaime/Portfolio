@@ -2,7 +2,7 @@ import './styles/hero.scss';
 
 export default function Hero() {
   return (
-    <div data-aos="fade-in" data-aos-delay="500" className="hero">
+    <div data-aos="fade-in" data-aos-once="true" className="hero">
       <p>Bonjour,</p>
       <h2>Paul-Arthur Aimé.</h2>
       <h2>Étudiant à 42, freelance en dévelopement web.</h2>

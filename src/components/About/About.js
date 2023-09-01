@@ -2,7 +2,7 @@ import './styles/about.scss';
 
 export default function About() {
   return (
-    <div data-aos="fade-in" data-aos-delay="500" id="about" className="about">
+    <div data-aos="fade-up" id="about" className="about">
       <h3>
         <span>01.</span> À propos de moi<span></span>
       </h3>

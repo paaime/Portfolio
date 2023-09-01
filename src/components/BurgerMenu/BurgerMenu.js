@@ -1,4 +1,4 @@
-import "./styles/burger-menu.scss";
+import './styles/burger-menu.scss';
 
 export default function BurgerMenu(props) {
   const { burgerMenu, setBurgerMenu } = props.burgerMenu;
@@ -13,6 +13,7 @@ export default function BurgerMenu(props) {
       <img
         onClick={handleBurgerMenu}
         src="https://cdn.icon-icons.com/icons2/1674/PNG/512/close_111152.png"
+        alt="close"
       />
       <nav>
         <a href="#about">

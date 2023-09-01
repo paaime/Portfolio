@@ -3,12 +3,13 @@ body {
   padding: 0;
   font-family: 'Figtree';
   // background-color: #0a1a2f;
-  cursor: none;
+  // cursor: none;
+  cursor: url('../public/img/pointer32.png'), auto;
 }
 
 a,
 button {
-  cursor: none;
+  cursor: url('../public/img/link32.png'), auto;
 }
 
 html {
@@ -44,6 +45,7 @@ button {
 }
 
 #tsparticles {
+  position: relative;
   canvas {
     z-index: 1 !important;
   }
@@ -193,32 +195,32 @@ button {
   --secondary-font: 'Space Mono';
 }
 
-.cursor-dot,
-.cursor-dot-outline {
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  z-index: 100;
-}
+// .cursor-dot,
+// .cursor-dot-outline {
+//   pointer-events: none;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   border-radius: 50%;
+//   opacity: 0;
+//   transform: translate(-50%, -50%);
+//   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+//   z-index: 100;
+// }
 
-.cursor-dot {
-  $size: 8px;
-  width: $size;
-  height: $size;
-  background-color: #ccd6f6;
-}
+// .cursor-dot {
+//   $size: 8px;
+//   width: $size;
+//   height: $size;
+//   background-color: #ccd6f6;
+// }
 
-.cursor-dot-outline {
-  $size: 40px;
-  width: $size;
-  height: $size;
-  background-color: rgba(#ccd6f6, 0.5);
-}
+// .cursor-dot-outline {
+//   $size: 40px;
+//   width: $size;
+//   height: $size;
+//   background-color: rgba(#ccd6f6, 0.5);
+// }
 
 .malt-icon {
   rect {
