@@ -3,6 +3,12 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-image: url('../../../../public/img/colored-blur.webp');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: -20px;
+  padding: 20px;
   p {
     &:nth-of-type(1) {
       color: white;
