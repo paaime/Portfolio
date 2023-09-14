@@ -34,13 +34,13 @@ export default function Header() {
           </a>
         </nav>
         <nav>
-          <a href="#github">
-            <span>03.</span>Github
+          <a href="#skills">
+            <span>03.</span>Compétences
           </a>
         </nav>
         <nav>
-          <a href="#contact">
-            <span>04.</span>Contact
+          <a href="#language-gallery">
+            <span>04.</span>Langages et Frameworks
           </a>
         </nav>
         <a className="cv" href="#contact">

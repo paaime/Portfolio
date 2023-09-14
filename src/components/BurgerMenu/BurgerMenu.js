@@ -40,12 +40,17 @@ export default function BurgerMenu() {
       </nav>
       <nav>
         <a href="#github" onClick={handleClose}>
-          <span>03.</span>Github
+          <span>03.</span>Compétences
+        </a>
+      </nav>
+      <nav>
+        <a href="#language-gallery" onClick={handleClose}>
+          <span>04.</span>Langages et Frameworks
         </a>
       </nav>
       <nav>
         <a href="#contact" onClick={handleClose}>
-          <span>04.</span>Contact
+          <span>05.</span>Contact
         </a>
       </nav>
     </div>

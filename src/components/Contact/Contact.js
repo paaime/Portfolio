@@ -2,13 +2,9 @@ import './styles/contact.scss';
 
 export default function Contact() {
   return (
-    <div
-      data-aos="fade-in"
-      id="contact"
-      className="contact"
-    >
+    <div data-aos="fade-in" id="contact" className="contact">
       <h3>
-        <span>04.</span>Contact
+        <span>05.</span>Contact
       </h3>
       <p>
         Vous pouvez me contacter sur mes différentes plateforme ou par mail à

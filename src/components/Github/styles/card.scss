@@ -11,10 +11,21 @@
       transparent 0%
     );
     .card-content {
+      display: flex;
+      height: 100px;
+      gap: 20px;
       margin: 1px;
       padding: 20px;
       border-radius: 5px;
       background-color: #112240;
+      // background-image: url(http://localhost:3000/static/media/html.6e930594286d8afe4c79.png);
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: right;
+      background-blend-mode: multiply;
+    }
+    img {
+      height: 50px;
     }
     .title {
       font-size: 20px;

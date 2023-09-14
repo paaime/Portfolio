@@ -3,7 +3,7 @@ import About from './components/About/About';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Projects from './components/Projects/Projects';
-import Github from './components/Github/Github';
+import Skills from './components/Github/Skills';
 import Contact from './components/Contact/Contact';
 import BurgerMenu from './components/BurgerMenu/BurgerMenu';
 import Footer from './components/Footer/Footer';
@@ -12,6 +12,7 @@ import 'aos/dist/aos.css';
 import { useState } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
+import LanguageGallery from './components/LanguageGallery/LanguageGallery';
 
 AOS.init({
   offset: window.innerWidth > 1800 ? -100 : 0,
@@ -208,7 +209,8 @@ function App() {
           <Hero />
           <About />
           <Projects />
-          <Github />
+          <Skills />
+          <LanguageGallery />
           <Contact />
           <Footer />
         </div>
