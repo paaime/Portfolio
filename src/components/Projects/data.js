@@ -6,7 +6,7 @@ export const projectsData = [
       'Un site vitrine pour une agence de développement web et mobile.',
     techno: ['React.js', 'Javascript', 'HTML', 'CSS'],
     link: 'https://paularthur-aime.fr/',
-    image: 'portfolio.png',
+    image: 'p2adeveloppement.jpeg',
     rightImage: true,
   },
   {
@@ -15,7 +15,7 @@ export const projectsData = [
     description: 'Un exemple de site Wordpress pour un restaurnt italien.',
     techno: ['Wordpress'],
     link: 'https://nellfelicita.paularthur-aime.fr/',
-    image: 'portfolio.png',
+    image: 'nellfelecita.png',
     rightImage: false,
   },
   {

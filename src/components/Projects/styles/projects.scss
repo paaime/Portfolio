@@ -1,5 +1,5 @@
 .projects {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,9 +19,13 @@
     font-size: 30px;
     margin-bottom: 50px;
   }
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
   .project {
     display: flex;
-    margin-bottom: 50px;
     .thumbnail-wrapper {
       width: 50%;
       position: relative;
@@ -108,7 +112,7 @@
 
   .project {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     .info {
       align-items: flex-start;
       ul {
