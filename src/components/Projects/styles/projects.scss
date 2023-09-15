@@ -108,46 +108,13 @@
 
   .project {
     display: flex;
+    gap: 15px;
     .info {
       align-items: flex-start;
       ul {
         display: flex;
         gap: 15px;
         padding-inline-start: 0;
-      }
-    }
-  }
-
-  .luffyswap {
-    .thumbnail-bg {
-      background-image: url('../../../../public/img/luffyswap.png');
-    }
-    .info {
-      text-align: right;
-      align-items: flex-end;
-      ul {
-        li {
-          margin-left: 15px;
-        }
-      }
-    }
-  }
-
-  .avaxslime {
-    display: flex;
-    .thumbnail-bg {
-      background-image: url('../../../../public/img/avaxslime.png');
-    }
-    .thumbnail-wrapper {
-      order: 2;
-    }
-    .info {
-      align-items: flex-start;
-      ul {
-        padding-inline-start: 0;
-        li {
-          margin-right: 15px;
-        }
       }
     }
   }
