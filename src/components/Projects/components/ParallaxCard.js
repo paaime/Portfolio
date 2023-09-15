@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useRef } from 'react';
 
-export default function ParallaxCard() {
+export default function ParallaxCard({ image, rightImage }) {
   const cardRef = useRef(null);
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
@@ -57,6 +57,7 @@ export default function ParallaxCard() {
     <div
       ref={cardRef}
       className="thumbnail-wrapper"
+      style={{ order: rightImage ? 1 : 'inherit' }}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -67,7 +68,10 @@ export default function ParallaxCard() {
       >
         <div
           className="thumbnail-bg"
-          style={{ transform: `translateX(${tX}px) translateY(${tY}px)` }}
+          style={{
+            transform: `translateX(${tX}px) translateY(${tY}px)`,
+            backgroundImage: `url('/img/${image}')`,
+          }}
         ></div>
       </div>
     </div>

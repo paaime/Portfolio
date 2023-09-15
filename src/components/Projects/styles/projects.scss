@@ -106,6 +106,18 @@
     }
   }
 
+  .project {
+    display: flex;
+    .info {
+      align-items: flex-start;
+      ul {
+        display: flex;
+        gap: 15px;
+        padding-inline-start: 0;
+      }
+    }
+  }
+
   .luffyswap {
     .thumbnail-bg {
       background-image: url('../../../../public/img/luffyswap.png');
@@ -149,7 +161,7 @@
       flex-direction: column;
       .thumbnail-wrapper {
         width: auto;
-        order: 0;
+        order: 0 !important;
         margin-bottom: 10px;
       }
       .info {
@@ -158,17 +170,3 @@
     }
   }
 }
-
-// @media (max-width: 700px) {
-//   .projects {
-//     .project {
-//       .thumbnail {
-//         display: flex;
-//         justify-content: center;
-//         img {
-//           width: 90%;
-//         }
-//       }
-//     }
-//   }
-// }
