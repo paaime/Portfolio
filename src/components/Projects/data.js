@@ -5,18 +5,28 @@ export const projectsData = [
     description:
       'Un site vitrine pour une agence de développement web et mobile.',
     techno: ['React.js', 'Javascript', 'HTML', 'CSS'],
-    link: 'https://paularthur-aime.fr/',
+    link: 'https://p2adeveloppement.fr/',
     image: 'p2adeveloppement.jpeg',
     rightImage: true,
   },
   {
     title: "Nell'Felicità",
     type: 'Réalisation',
-    description: 'Un exemple de site Wordpress pour un restaurnt italien.',
+    description: "Réalisation d'unx site Wordpress pour un restaurant italien.",
     techno: ['Wordpress'],
     link: 'https://nellfelicita.paularthur-aime.fr/',
     image: 'nellfelecita.png',
     rightImage: false,
+  },
+  {
+    title: 'Aromatica',
+    type: 'Exemple',
+    description:
+      'Un exemple de site réalisé avec Wordpress pour un commerce local.',
+    techno: ['Wordpress'],
+    link: 'https://aromatica.paularthur-aime.fr/',
+    image: 'aromatica.jpeg',
+    rightImage: true,
   },
   {
     title: 'Mon Portfolio',
@@ -26,7 +36,7 @@ export const projectsData = [
     techno: ['React.js', 'HTML', 'CSS'],
     link: 'https://paularthur-aime.fr/',
     image: 'portfolio.png',
-    rightImage: true,
+    rightImage: false,
   },
   {
     title: 'Luffyswap',
@@ -36,7 +46,7 @@ export const projectsData = [
     techno: ['React.js', 'Ether.js', 'Typescript', 'Avalanche Blockchain'],
     link: 'https://luffy-swap-pm1duq6o5-luffyswapprod.vercel.app/',
     image: 'luffyswap.png',
-    rightImage: false,
+    rightImage: true,
   },
   {
     title: 'AvaxSlime',
@@ -46,6 +56,6 @@ export const projectsData = [
     techno: ['React.js', 'Ether.js', 'Web3'],
     link: 'https://avaxslime.com/',
     image: 'avaxslime.png',
-    rightImage: true,
+    rightImage: false,
   },
 ];
