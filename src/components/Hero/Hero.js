@@ -5,7 +5,7 @@ export default function Hero() {
     <div data-aos="fade-in" data-aos-once="true" className="hero">
       <p>Bonjour,</p>
       <h2>Paul-Arthur Aimé.</h2>
-      <h2>Étudiant à 42, freelance en dévelopement web.</h2>
+      <h2>Étudiant à 42, freelance en développement web.</h2>
       <p>
         Passionné depuis jeune par l'informatique puis le{' '}
         <span>développement web.</span>

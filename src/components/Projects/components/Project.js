@@ -4,7 +4,10 @@ export default function Project({ data }) {
   return (
     <div className="project">
       <ParallaxCard image={data.image} rightImage={data.rightImage} />
-      <div
+      <a
+        href={data.link}
+        target="_blank"
+        rel="noreferrer"
         className="info"
         style={{
           alignItems: data.rightImage ? 'flex-start' : 'flex-end',
@@ -37,7 +40,7 @@ export default function Project({ data }) {
             <line x1="10" y1="14" x2="21" y2="3"></line>
           </svg>
         </a>
-      </div>
+      </a>
     </div>
   );
 }

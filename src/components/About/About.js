@@ -14,11 +14,11 @@ export default function About() {
             <span>développement web</span> il y a <span>5-6 ans</span> grâce à
             <span> OpenClassRooms et Youtube</span>. J'ai donc commencé à faire
             des petits projets pour m'entrainer et pour{' '}
-            <span>apprendre les bases du web (HTML, CSS, JS) .</span>
+            <span>apprendre les bases du web (HTML, CSS, JS).</span>
             <br /> J'ai toujours adoré apprendre par moi-même en{' '}
             <span>m'exerçant directement.</span>
-            <br /> Aujourd'hui je suis étudiant à <span>42 Lyon</span> puis
-            réalisent des projets personnels avec des techniques tels que{' '}
+            <br /> Aujourd'hui je suis étudiant à <span>42 Lyon</span>, je
+            réalise des projets personnels avec des languages tels que{' '}
             <span>React, Node, Mongo Db, Python (scrapping) et d'autres.</span>
             <br />
             J'aime également beaucoup le monde des <span>Blockchain</span> et ai

@@ -10,22 +10,22 @@ export const projectsData = [
     rightImage: true,
   },
   {
-    title: "Nell'Felicità",
+    title: 'Gustitalia',
     type: 'Réalisation',
     description: "Réalisation d'unx site Wordpress pour un restaurant italien.",
     techno: ['Wordpress'],
-    link: 'https://nellfelicita.paularthur-aime.fr/',
-    image: 'nellfelecita.png',
+    link: 'https://gustitalia.paularthur-aime.fr/',
+    image: 'gustitalia.jpeg',
     rightImage: false,
   },
   {
-    title: 'Aromatica',
+    title: 'Apéricieux',
     type: 'Exemple',
     description:
       'Un exemple de site réalisé avec Wordpress pour un commerce local.',
     techno: ['Wordpress'],
-    link: 'https://aromatica.paularthur-aime.fr/',
-    image: 'aromatica.jpeg',
+    link: 'https://apericieux.paularthur-aime.fr/',
+    image: 'apericieux.jpeg',
     rightImage: true,
   },
   {
