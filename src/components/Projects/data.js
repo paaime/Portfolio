@@ -1,5 +1,14 @@
 export const projectsData = [
   {
+    title: 'À Mains Nues',
+    type: 'Réalisation',
+    description: 'Un site pour un salon de manucure.',
+    techno: ['Wordpress', 'Javascript', 'CSS'],
+    link: 'https://amainsnues.fr/',
+    image: 'amainsnues.jpeg',
+    rightImage: false,
+  },
+  {
     title: 'P2A Développement',
     type: 'Réalisation',
     description:
